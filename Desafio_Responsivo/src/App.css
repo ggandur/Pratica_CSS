@@ -3,14 +3,16 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
   background: radial-gradient(circle, rgb(3, 20, 27) 0%, rgb(0, 255, 76) 170%);
-  font-family: 'Manrope', sans-serif;
 }
 
 h1 {
+  padding: 0;
+  margin: 0;
   color: aliceblue;
 }
 
@@ -51,13 +53,40 @@ a:visited {
 
 .CompreAgora {
   width: 20vw;
-  text-align: center;
+  text-align: right;
+}
+
+#botaoComprar {
+  height: 2rem;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  border: solid 1px rgb(10, 70, 28);
+  border-radius: 5px;
+  padding: 0 1rem 0 1rem;
+  color: aliceblue;
+}
+
+#botaoComprar:hover {
+  background:rgb(14, 97, 39);
+}
+
+#botaoComprar:active {
+  background:rgb(10, 73, 29);
 }
 
 .Title {
   font-size: 2rem;
   margin-top: auto;
   text-align: center;
+}
+
+.SubTitle {
+  margin-top: auto;
+  text-align: center;
+  max-width: 85%;
+  color: aliceblue;
 }
 
 .Column {
@@ -70,7 +99,7 @@ a:visited {
 }
 
 #Img_iphone {
-  max-height: 80vh;
+  max-height: 65vh;
   max-width: 90vw;
   margin-top: auto;
   transition: all .2s;
@@ -89,5 +118,38 @@ a:visited {
 
   body {
     background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgb(246, 70, 252) 100%);
+  }
+
+  .Header {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .CompreAgora {
+    display: flex;
+    margin-top: auto;
+    width: 30vw;
+    justify-content: center;
+  }
+  
+  #botaoComprar {
+    height: 2rem;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    border: solid 1px rgb(142, 21, 146);
+    border-radius: 5px;
+    padding: 0 1rem 0 1rem;
+  }
+  
+  #botaoComprar:hover {
+    background:rgb(149, 28, 206);
+  }
+  
+  #botaoComprar:active {
+    background:rgb(82, 14, 114);
   }
 }
